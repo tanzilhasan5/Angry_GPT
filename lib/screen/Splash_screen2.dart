@@ -45,7 +45,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
                     children: [
-                      Text('Meet Your AI Companions', style: TextStyle(
+                      Text('Meet Your AI Companions', textAlign: TextAlign.center, style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold,fontSize: 28),
                       ),
                       SizedBox(height: 5,),

@@ -20,6 +20,7 @@ class Signup extends StatelessWidget {
                   children: [
                     SizedBox(height: 40),
                     TextFormField(
+                      style: TextStyle(color: TextColor),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -42,6 +43,7 @@ class Signup extends StatelessWidget {
                     SizedBox(height: 10),
 
                     TextFormField(
+                      style: TextStyle(color: TextColor),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -62,6 +64,7 @@ class Signup extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     TextFormField(
+                      style: TextStyle(color: TextColor),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -87,11 +90,12 @@ class Signup extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     TextFormField(
+                      style: TextStyle(color: TextColor),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        hintText: 'Enter your password',
+                        hintText: 'Re-enter your password',
                         hintStyle: TextStyle(
                           color: TextColor,
                           fontWeight: FontWeight.bold,
@@ -106,7 +110,7 @@ class Signup extends StatelessWidget {
                           color: ButtonColor,
                           size: 20,
                         ),
-                        labelText: 'Enter your password',
+                        labelText: 'Re-enter your  password',
                       ),
                       cursorColor: Colors.green,
                     ),
@@ -118,12 +122,12 @@ class Signup extends StatelessWidget {
                         backgroundColor: ButtonColor,
                       ),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/');
+                        Navigator.pushNamed(context, '/verifyemail');
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Log in', style: TextStyle(fontSize: 14)),
+                          Text('Sign Up', style: TextStyle(fontSize: 14)),
                         ],
                       ),
                     ),

@@ -20,7 +20,9 @@ class Login extends StatelessWidget {
                   children: [
                     SizedBox(height: 40),
                     TextFormField(
+                      style: TextStyle(color: TextColor),
                       decoration: InputDecoration(
+                        focusColor: Colors.white,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
@@ -28,6 +30,7 @@ class Login extends StatelessWidget {
                         hintStyle: TextStyle(
                           color: TextColor,
                           fontWeight: FontWeight.bold,
+
                         ),
                         prefixIcon: Icon(
                           Icons.email_outlined,
@@ -40,6 +43,7 @@ class Login extends StatelessWidget {
                     ),
                     SizedBox(height: 10),
                     TextFormField(
+                      style: TextStyle(color: TextColor),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -68,7 +72,9 @@ class Login extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        TextButton(onPressed: (){}, child: Text('Forget password?',style: TextStyle(color: ButtonColor),))
+                        TextButton(onPressed: (){
+                          Navigator.pushNamed(context, '/forgetPassword');
+                        }, child: Text('Forget password?',style: TextStyle(color: ButtonColor),))
                       ],
                     ),
                     SizedBox(height: 10),
