@@ -1,6 +1,7 @@
 import 'package:angrygpt/screen/Splash_screen.dart';
 import 'package:angrygpt/screen/Splash_screen2.dart';
 import 'package:angrygpt/screen/forgetpassword.dart';
+import 'package:angrygpt/screen/home.dart';
 import 'package:angrygpt/screen/login.dart';
 import 'package:angrygpt/screen/otpverification.dart';
 import 'package:angrygpt/screen/resetpassword.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/otpverification': (context)=>Otpverification(),
         '/forgetPassword': (context)=>ForgetPassword(),
         '/resetpassword':(context)=> Resetpassword(),
+        '/home':(context)=>Home(),
 
 
 

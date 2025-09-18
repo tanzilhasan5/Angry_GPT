@@ -83,7 +83,7 @@ class Login extends StatelessWidget {
                         backgroundColor: ButtonColor,
                       ),
                       onPressed: () {
-                        Navigator.pushNamed(context, '');
+                        Navigator.pushNamed(context, '/home');
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
