@@ -12,6 +12,9 @@ class Otpverification extends StatelessWidget {
     return  Scaffold(
       backgroundColor: Colors.black87,
       appBar: AppBar(
+          iconTheme: IconThemeData(
+              color: TextColor
+          ),
           title: Text('OTP verification',style: TextStyle(color: TextColor),),centerTitle: true,
           backgroundColor: Colors.grey.shade900),
 
@@ -23,7 +26,7 @@ class Otpverification extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    SizedBox(height: 40),
+                    SizedBox(height: 140),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: PinCodeTextField(

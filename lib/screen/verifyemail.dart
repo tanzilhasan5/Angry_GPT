@@ -10,6 +10,9 @@ class Verifyemail extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black87,
       appBar: AppBar(
+          iconTheme: IconThemeData(
+              color: TextColor
+          ),
           title: Text('Verify Email',style: TextStyle(color: TextColor),),centerTitle: true,
       backgroundColor: Colors.grey.shade900),
 

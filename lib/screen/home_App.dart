@@ -2,13 +2,12 @@ import 'package:angrygpt/style/color.dart';
 import 'package:angrygpt/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class HomeApp extends StatelessWidget {
+  const HomeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return
-      Scaffold(
+    return  Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(color: TextColor),
         title: Text('Hi, Susan', style: TextStyle(color: TextColor)),
@@ -51,7 +50,7 @@ class Home extends StatelessWidget {
                                 padding: const EdgeInsets.only(left: 8, top: 4),
                                 child: Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: [
                                     Card(
                                       color: TextColor.withOpacity(0.5),
@@ -72,7 +71,7 @@ class Home extends StatelessWidget {
                                       child: TextButton(
                                         style: TextButton.styleFrom(
                                           backgroundColor:
-                                              TextColor.withOpacity(0.5),
+                                          TextColor.withOpacity(0.5),
                                           minimumSize: Size(10, 10),
                                         ),
                                         onPressed: () {},
@@ -89,7 +88,7 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 85),
+                                    padding: const EdgeInsets.only(right: 80),
                                     child: Text(
                                       'Angry GPT',
                                       style: TextStyle(
@@ -134,7 +133,7 @@ class Home extends StatelessWidget {
                                 padding: const EdgeInsets.only(left: 8, top: 4),
                                 child: Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: [
                                     Card(
                                       color: TextColor,
@@ -157,7 +156,7 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 88),
+                                    padding: const EdgeInsets.only(right: 80),
                                     child: Text(
                                       'Visit Shop',
                                       style: TextStyle(
@@ -208,7 +207,7 @@ class Home extends StatelessWidget {
                                 padding: const EdgeInsets.only(left: 8, top: 4),
                                 child: Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: [
                                     Card(
                                       color: TextColor.withOpacity(0.5),
@@ -245,7 +244,7 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 153),
+                                    padding: const EdgeInsets.only(right: 133),
                                     child: Text(
                                       'Mimi',
                                       style: TextStyle(
@@ -290,7 +289,7 @@ class Home extends StatelessWidget {
                                 padding: const EdgeInsets.only(left: 8, top: 4),
                                 child: Row(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   children: [
                                     Card(
                                       color: TextColor.withOpacity(0.5),
@@ -327,7 +326,7 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 153),
+                                    padding: const EdgeInsets.only(right: 133),
                                     child: Text(
                                       'Lola',
                                       style: TextStyle(
@@ -361,90 +360,7 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(7.0),
-                      child: Card(
-                        color: TextColor.withOpacity(0.2),
-                        child: Container(
-                          height: 150,
-                          width: double.infinity,
-                          child: Card(
-                            color: TextColor.withOpacity(0.2),
-                            child: Container(
-                              height: 150,
-                              width: 150,
-                              child: InkWell(
 
-                                onTap: (){Navigator.pushNamed(context, '/homeapp');},
-                                child: Column(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 8,
-                                        top: 4,
-                                      ),
-                                      child: Row(
-                                        children: [
-                                          Card(
-                                            color: TextColor.withOpacity(0.5),
-                                            child: Container(
-                                              height: 40,
-                                              width: 40,
-                                              decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  image: AssetImage(
-                                                    'image/logo/angry.png',
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text(
-                                              'Personal Assistant',
-                                              style: TextStyle(
-                                                color: ButtonColor,
-                                                fontSize: 18,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    SizedBox(height: 10),
-                                    Column(
-                                      children: [
-                                        SingleChildScrollView(
-                                          child: Padding(
-                                            padding: const EdgeInsets.symmetric(
-                                              horizontal: 8,
-                                            ),
-                                            child: Text(
-                                              'Organized, helpful, and always on task. Your smart companion for staying productive and on schedule',
-                                              style: TextStyle(
-                                                color: TextColor,
-                                                fontSize: 15,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
               SizedBox(height: 2),
               Row(
                 children: [
@@ -506,11 +422,11 @@ class Home extends StatelessWidget {
                                       Expanded(
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
-                                          child: TextButton(
+                                          child: ElevatedButton(
 
                                               style: ElevatedButton.styleFrom(backgroundColor: ButtonColor,
                                                   alignment: Alignment.center,
-                                                minimumSize: Size(double.maxFinite, 20)
+                                                  minimumSize: Size(double.maxFinite, 20)
 
 
 
@@ -519,7 +435,9 @@ class Home extends StatelessWidget {
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
 
-                                              Text('Go Premium,',style: TextStyle(fontSize: 14,color: Colors.black),),Icon(Icons.arrow_forward,color: Colors.black,)],),
+                                              Text('Go Premium,',style: TextStyle(fontSize: 14,color: Colors.black),),Icon(Icons.arrow_forward,color: Colors.black,)]
+                                            ,),
+
                                           ),
                                         ),
                                       )
