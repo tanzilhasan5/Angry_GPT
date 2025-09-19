@@ -12,7 +12,7 @@ class HomeApp extends StatelessWidget {
         iconTheme: IconThemeData(color: TextColor),
         title: Text('Hi, Susan', style: TextStyle(color: TextColor)),
         leading: Image(image: AssetImage('image/logo/Profile.png')),
-        backgroundColor: Colors.grey.shade900,
+        backgroundColor: Colors.black87,
       ),
       backgroundColor: Colors.black87,
 
@@ -20,15 +20,18 @@ class HomeApp extends StatelessWidget {
         child: Container(
           child: Column(
             children: [
+              SizedBox(height: 10,),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                mainAxisAlignment: MainAxisAlignment.start,
 
                 children: [
+                  SizedBox(height: 10,),
                   Padding(
-                    padding: const EdgeInsets.only(right: 190),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Text(
                       'Who do you want to \n chat with today?',
-                      style: TextStyle(fontSize: 30, color: TextColor),
+                      style: TextStyle(fontSize: 25, color: TextColor),
                     ),
                   ),
                 ],
@@ -39,15 +42,16 @@ class HomeApp extends StatelessWidget {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Card(
+                      child:
+                      Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(left: 8, top: 4),
+                                padding: const EdgeInsets.only(left: 4),
                                 child: Row(
                                   mainAxisAlignment:
                                   MainAxisAlignment.spaceBetween,
@@ -71,11 +75,11 @@ class HomeApp extends StatelessWidget {
                                       child: TextButton(
                                         style: TextButton.styleFrom(
                                           backgroundColor:
-                                          TextColor.withOpacity(0.5),
-                                          minimumSize: Size(10, 10),
+                                          TextColor.withOpacity(0.2),
                                         ),
                                         onPressed: () {},
                                         child: Text(
+
                                           'Free',
                                           style: TextStyle(color: Colors.white),
                                         ),
@@ -88,12 +92,12 @@ class HomeApp extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 80),
+                                    padding: const EdgeInsets.only(right: 70,),
                                     child: Text(
                                       'Angry GPT',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -101,7 +105,7 @@ class HomeApp extends StatelessWidget {
                                   SingleChildScrollView(
                                     child: Padding(
                                       padding: const EdgeInsets.symmetric(
-                                        horizontal: 8,
+                                        horizontal: 2,
                                       ),
                                       child: Text(
                                         'Blunt, sarcastic, and always in a mood. Dare to chat?',
@@ -125,18 +129,18 @@ class HomeApp extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(left: 8, top: 4),
+                                padding: const EdgeInsets.only(left: 4, top: 7),
                                 child: Row(
                                   mainAxisAlignment:
                                   MainAxisAlignment.spaceBetween,
                                   children: [
                                     Card(
-                                      color: TextColor,
+                                      color: TextColor.withOpacity(0.5),
                                       child: Container(
                                         height: 40,
                                         width: 40,
@@ -152,16 +156,16 @@ class HomeApp extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              SizedBox(height: 10),
+                              SizedBox(height: 16),
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 80),
+                                    padding: const EdgeInsets.only(right: 65),
                                     child: Text(
                                       'Visit Shop',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -199,7 +203,7 @@ class HomeApp extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
@@ -226,14 +230,17 @@ class HomeApp extends StatelessWidget {
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: TextButton(
+
                                         style: TextButton.styleFrom(
                                           backgroundColor: ButtonColor,
-                                          minimumSize: Size(10, 10),
                                         ),
                                         onPressed: () {},
                                         child: Text(
                                           'Premium',
-                                          style: TextStyle(color: Colors.black),
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                            
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -244,12 +251,11 @@ class HomeApp extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 133),
-                                    child: Text(
-                                      'Mimi',
+                                    padding: const EdgeInsets.only(right: 100),
+                                    child: Text('Mimi',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -281,7 +287,7 @@ class HomeApp extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
@@ -326,12 +332,12 @@ class HomeApp extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 133),
+                                    padding: const EdgeInsets.only(right: 110),
                                     child: Text(
                                       'Lola',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -370,7 +376,7 @@ class HomeApp extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 260,
+                          height: 300,
                           width: double.infinity,
                           child: Expanded(
                             child: Column(

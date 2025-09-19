@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
         iconTheme: IconThemeData(color: TextColor),
         title: Text('Hi, Susan', style: TextStyle(color: TextColor)),
         leading: Image(image: AssetImage('image/logo/Profile.png')),
-        backgroundColor: Colors.grey.shade900,
+        backgroundColor: Colors.black87,
       ),
       backgroundColor: Colors.black87,
 
@@ -21,15 +21,17 @@ class Home extends StatelessWidget {
         child: Container(
           child: Column(
             children: [
+              SizedBox(height: 10,),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.start,
 
                 children: [
+
                   Padding(
-                    padding: const EdgeInsets.only(right: 190),
+                    padding: const EdgeInsets.only(left: 10),
                     child: Text(
                       'Who do you want to \n chat with today?',
-                      style: TextStyle(fontSize: 30, color: TextColor),
+                      style: TextStyle(fontSize: 25, color: TextColor),
                     ),
                   ),
                 ],
@@ -43,7 +45,7 @@ class Home extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
@@ -89,12 +91,12 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 85),
+                                    padding: const EdgeInsets.only(right: 65),
                                     child: Text(
                                       'Angry GPT',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -126,7 +128,7 @@ class Home extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
@@ -137,7 +139,7 @@ class Home extends StatelessWidget {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Card(
-                                      color: TextColor,
+                                      color: TextColor.withOpacity(0.5),
                                       child: Container(
                                         height: 40,
                                         width: 40,
@@ -157,12 +159,12 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 88),
+                                    padding: const EdgeInsets.only(right: 65),
                                     child: Text(
                                       'Visit Shop',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -200,7 +202,7 @@ class Home extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
@@ -229,7 +231,6 @@ class Home extends StatelessWidget {
                                       child: TextButton(
                                         style: TextButton.styleFrom(
                                           backgroundColor: ButtonColor,
-                                          minimumSize: Size(10, 10),
                                         ),
                                         onPressed: () {},
                                         child: Text(
@@ -245,12 +246,12 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 153),
+                                    padding: const EdgeInsets.only(right: 100),
                                     child: Text(
                                       'Mimi',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -282,7 +283,7 @@ class Home extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 150,
+                          height: 180,
                           width: 150,
                           child: Column(
                             children: [
@@ -327,12 +328,12 @@ class Home extends StatelessWidget {
                               Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 153),
+                                    padding: const EdgeInsets.only(right: 113),
                                     child: Text(
                                       'Lola',
                                       style: TextStyle(
                                         color: ButtonColor,
-                                        fontSize: 24,
+                                        fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -372,7 +373,7 @@ class Home extends StatelessWidget {
                           height: 150,
                           width: double.infinity,
                           child: Card(
-                            color: TextColor.withOpacity(0.2),
+                            color: TextColor.withOpacity(0.1),
                             child: Container(
                               height: 150,
                               width: 150,
@@ -454,7 +455,7 @@ class Home extends StatelessWidget {
                       child: Card(
                         color: TextColor.withOpacity(0.2),
                         child: Container(
-                          height: 260,
+                          height: 300,
                           width: double.infinity,
                           child: Expanded(
                             child: Column(
