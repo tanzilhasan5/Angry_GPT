@@ -1,5 +1,6 @@
 import 'package:angrygpt/screen/Splash_screen.dart';
 import 'package:angrygpt/screen/Splash_screen2.dart';
+import 'package:angrygpt/screen/chatwithaI.dart';
 import 'package:angrygpt/screen/forgetpassword.dart';
 import 'package:angrygpt/screen/home.dart';
 import 'package:angrygpt/screen/home_App.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         '/resetpassword':(context)=> Resetpassword(),
         '/home':(context)=>Home(),
         '/homeapp':(context)=>HomeApp(),
+        '/chatwithai':(context)=>ChatWithAi(),
 
 
 

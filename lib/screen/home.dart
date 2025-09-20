@@ -44,80 +44,85 @@ class Home extends StatelessWidget {
                     Expanded(
                       child: Card(
                         color: TextColor.withOpacity(0.2),
-                        child: Container(
-                          height: 180,
-                          width: 150,
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 8, top: 4),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Card(
-                                      color: TextColor.withOpacity(0.5),
-                                      child: Container(
-                                        height: 40,
-                                        width: 40,
-                                        decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                            image: AssetImage(
-                                              'image/logo/angry.png',
+                        child: InkWell(
+                          onTap: (){
+                            Navigator.pushNamed(context, '/chatwithai');
+                          },
+                          child: Container(
+                            height: 180,
+                            width: 150,
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8, top: 4),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Card(
+                                        color: TextColor.withOpacity(0.5),
+                                        child: Container(
+                                          height: 40,
+                                          width: 40,
+                                          decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                              image: AssetImage(
+                                                'image/logo/angry.png',
+                                              ),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextButton(
-                                        style: TextButton.styleFrom(
-                                          backgroundColor:
-                                              TextColor.withOpacity(0.5),
-                                          minimumSize: Size(10, 10),
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                            backgroundColor:
+                                                TextColor.withOpacity(0.5),
+                                            minimumSize: Size(10, 10),
+                                          ),
+                                          onPressed: () {},
+                                          child: Text(
+                                            'Free',
+                                            style: TextStyle(color: Colors.white),
+                                          ),
                                         ),
-                                        onPressed: () {},
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 65),
+                                      child: Text(
+                                        'Angry GPT',
+                                        style: TextStyle(
+                                          color: ButtonColor,
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(height: 2),
+                                    SingleChildScrollView(
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                        ),
                                         child: Text(
-                                          'Free',
-                                          style: TextStyle(color: Colors.white),
+                                          'Blunt, sarcastic, and always in a mood. Dare to chat?',
+                                          style: TextStyle(
+                                            color: TextColor.withOpacity(0.5),
+                                            fontSize: 15,
+                                          ),
                                         ),
                                       ),
                                     ),
                                   ],
                                 ),
-                              ),
-                              SizedBox(height: 10),
-                              Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(right: 65),
-                                    child: Text(
-                                      'Angry GPT',
-                                      style: TextStyle(
-                                        color: ButtonColor,
-                                        fontSize: 16,
-                                      ),
-                                    ),
-                                  ),
-                                  SizedBox(height: 2),
-                                  SingleChildScrollView(
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                        horizontal: 8,
-                                      ),
-                                      child: Text(
-                                        'Blunt, sarcastic, and always in a mood. Dare to chat?',
-                                        style: TextStyle(
-                                          color: TextColor.withOpacity(0.5),
-                                          fontSize: 15,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),

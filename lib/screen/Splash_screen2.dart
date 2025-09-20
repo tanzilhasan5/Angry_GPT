@@ -65,7 +65,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
 
-                        Text('Get Started',style: TextStyle(fontSize: 14),),Icon(Icons.arrow_forward)]
+                        Text('Get Started',style: TextStyle(fontSize: 14,color: Colors.black),),Icon(Icons.arrow_forward)]
                         ,),
                       )
                     ],
