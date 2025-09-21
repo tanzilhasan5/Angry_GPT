@@ -25,17 +25,21 @@ class Otpverification extends StatelessWidget {
             child: Column(
               children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(height: 140),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: PinCodeTextField(
 
+
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         appContext: context, length: 6,
                         animationType: AnimationType.fade,
                         keyboardType: TextInputType.number,
                         pinTheme: PinTheme(
+
+
 
 
                           shape: PinCodeFieldShape.circle,

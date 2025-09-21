@@ -16,11 +16,14 @@ class CustomDrawer extends StatelessWidget {
               children: [
                 ListTile(leading: ImageIcon(color: TextColor,
                     AssetImage('image/logo/edit.png',)),
-                  title: Text('New Chat', style: TextStyle(color: TextColor)), onTap: () {},
+                  title: Text('New Chat', style: TextStyle(color: TextColor)), onTap: () {
+                  Navigator.pushNamed(context, '/chatwithai');
+                  },
                 ),
                 ListTile(
                   leading: Icon(Icons.history, color: TextColor),
-                  title: Text('History', style: TextStyle(color: TextColor)), onTap: () {},
+                  title: Text('History', style: TextStyle(color: TextColor)), onTap: ()
+                {Navigator.pushNamed(context, '/history');},
                 ),
               ],
             ),
@@ -41,11 +44,8 @@ class CustomDrawer extends StatelessWidget {
                   leading: Icon(Icons.settings),
                   title: Text('Settings', style: TextStyle(color: TextColor)), onTap: () {},
                 ),
-                ListTile(
-                  leading: Icon(Icons.settings),
-                  title: Text('Settings', style: TextStyle(color: TextColor)), onTap: () {},
-                ),
-                SizedBox(height: 150,),
+
+                SizedBox(height: 310,),
                 ListTile(
                   leading: Image(image: AssetImage('image/logo/Profile.png')),
                   title: Text('Susan Flores', style: TextStyle(color: TextColor)), onTap: () {},

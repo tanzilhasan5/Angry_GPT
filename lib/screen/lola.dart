@@ -2,8 +2,8 @@ import 'package:angrygpt/style/color.dart';
 import 'package:angrygpt/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
-class ChatWithAi extends StatelessWidget {
-  const ChatWithAi({super.key});
+class Lola extends StatelessWidget {
+  const Lola({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class ChatWithAi extends StatelessWidget {
                                   border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(12),
                                   ),
-                                  hintText: 'Message with Angry GPT...',
+                                  hintText: 'Hey there! What’s up?',
                                   hintStyle: TextStyle(
                                     color: TextColor,
                                     fontWeight: FontWeight.bold,
@@ -87,34 +87,34 @@ class ChatWithAi extends StatelessWidget {
                             Container(
                               height: 40,
                               width: 100,
-                              color: Colors.black87,
+                              color: TextColor.withOpacity(0.1) ,
                               child: TextButton(onPressed: (){}, child: Text('Angry GPT',style: TextStyle(fontSize: 16,color: Colors.white),)),
                             ),
                             Container(
                               height: 40,
                               width: 100,
                               decoration: BoxDecoration(
-                                  color: TextColor.withOpacity(0.1),
+                                  color:  Colors.black87,
 
 
-                                borderRadius: BorderRadius.circular(7)
+                                  borderRadius: BorderRadius.circular(7)
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.all(4.0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text('LoLa',style: TextStyle(fontSize: 14,color: Colors.white),),
-                                  Container(
-                                    decoration: BoxDecoration(
+                                    Text('Lola',style: TextStyle(fontSize: 14,color: Colors.white),),
+                                    Container(
+                                      decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(3),
-                                      color: ButtonColor,
-                                    ),
+                                        color: ButtonColor,
+                                      ),
 
-                                    child:  ImageIcon(
-                                        AssetImage('image/logo/crown.png',)
-                                    ),
-                                  )
+                                      child:  ImageIcon(
+                                          AssetImage('image/logo/crown.png',)
+                                      ),
+                                    )
                                   ],
                                 ),
                               ),
