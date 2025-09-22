@@ -90,7 +90,7 @@ class Mimi extends StatelessWidget {
                               height: 40,
                               width: 100,
                               color: TextColor.withOpacity(0.1) ,
-                              child: TextButton(onPressed: (){}, child: Text('Angry GPT',style: TextStyle(fontSize: 16,color: Colors.white),)),
+                              child: TextButton(onPressed: (){}, child: Text('Angry GPT',style: TextStyle(fontSize: 13,color: Colors.white),)),
                             ),
                             Container(
                               height: 40,
