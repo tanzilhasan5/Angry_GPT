@@ -20,7 +20,7 @@ class ChatWithAi extends StatelessWidget {
       backgroundColor: Colors.black87,
       body: Column(
         children: [
-          SizedBox(height: 200),
+          SizedBox(height: 150),
           Center(
             child: Text(
               'What now? Spit it out!',
@@ -29,9 +29,9 @@ class ChatWithAi extends StatelessWidget {
           ),
           Spacer(),
           Flexible(
-            child: SingleChildScrollView(
+            child: SafeArea(
               child: Container(
-                height: 300,
+                height: 360,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: TextColor.withOpacity(0.4),
@@ -49,7 +49,7 @@ class ChatWithAi extends StatelessWidget {
                         child: Flexible(
                           child: Expanded(
                             child: Container(
-                              height: 48,
+                              height: 40,
 
                               child: TextFormField(
                                 style: TextStyle(color: TextColor),

@@ -120,7 +120,7 @@ class PaymentDetails extends StatelessWidget {
                           minimumSize: Size(300, 50) ),
                       onPressed: (){
                         Navigator.pushNamed(context, '/mimi');
-                      }, child: Text('Confirm Purchase',style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold,color: Colors.black87),)),
+                      }, child: Text('Confirm Purchase',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black87),)),
 
                 ],
               )

@@ -2,6 +2,8 @@ import 'package:angrygpt/screen/Splash_screen.dart';
 import 'package:angrygpt/screen/Splash_screen2.dart';
 import 'package:angrygpt/screen/assistant.dart';
 import 'package:angrygpt/screen/chatwithaI.dart';
+import 'package:angrygpt/screen/edit_profile.dart';
+import 'package:angrygpt/screen/edit_profile_name.dart';
 import 'package:angrygpt/screen/forgetpassword.dart';
 import 'package:angrygpt/screen/history.dart';
 import 'package:angrygpt/screen/home.dart';
@@ -16,7 +18,6 @@ import 'package:angrygpt/screen/profile.dart';
 import 'package:angrygpt/screen/resetpassword.dart';
 import 'package:angrygpt/screen/signup.dart';
 import 'package:angrygpt/screen/verifyemail.dart';
-import 'package:angrygpt/widgets/chatList.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -49,7 +50,9 @@ class MyApp extends StatelessWidget {
         '/mimi':(context)=>Mimi(),
         '/premiumcard':(context)=>Premiumcard(),
         '/payment_details':(context)=>PaymentDetails(),
-        '/profile':(context)=>Profile()
+        '/profile':(context)=>Profile(),
+        '/edit_profile':(context)=> EditProfile(),
+        '/edit_profile_name':(context)=> EditProfileName(),
 
 
 

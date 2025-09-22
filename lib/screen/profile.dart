@@ -30,7 +30,7 @@ class Profile extends StatelessWidget {
                   children: [
                     InkWell(
                      onTap: ()
-                     { },
+                     {Navigator.pushNamed(context, '/edit_profile'); },
                       child: ListTile(
                         leading: Icon(Icons.person, color: Colors.grey),
 
