@@ -10,6 +10,8 @@ import 'package:angrygpt/screen/login.dart';
 import 'package:angrygpt/screen/lola.dart';
 import 'package:angrygpt/screen/mimi.dart';
 import 'package:angrygpt/screen/otpverification.dart';
+import 'package:angrygpt/screen/payment_details.dart';
+import 'package:angrygpt/screen/premiumcard.dart';
 import 'package:angrygpt/screen/resetpassword.dart';
 import 'package:angrygpt/screen/signup.dart';
 import 'package:angrygpt/screen/verifyemail.dart';
@@ -44,6 +46,8 @@ class MyApp extends StatelessWidget {
         '/assistant':(context)=>Assistant(),
         '/lola':(context)=>Lola(),
         '/mimi':(context)=>Mimi(),
+        '/premiumcard':(context)=>Premiumcard(),
+        '/payment_details':(context)=>PaymentDetails()
 
 
 

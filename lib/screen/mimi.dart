@@ -20,6 +20,7 @@ class Mimi extends StatelessWidget {
       backgroundColor: Colors.black87,
       body: Column(
         children: [
+
           SizedBox(height: 200),
           Center(
             child: Text(
@@ -27,6 +28,7 @@ class Mimi extends StatelessWidget {
               style: TextStyle(color: ButtonColor, fontSize: 24),
             ),
           ),
+
           Spacer(),
           Flexible(
             child: SingleChildScrollView(

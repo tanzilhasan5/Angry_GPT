@@ -444,11 +444,10 @@ class HomeApp extends StatelessWidget {
                                               style: ElevatedButton.styleFrom(backgroundColor: ButtonColor,
                                                   alignment: Alignment.center,
                                                   minimumSize: Size(double.maxFinite, 20)
-
-
-
                                               ),
-                                              onPressed: (){}, child: Row(
+                                              onPressed: (){
+                                                Navigator.pushNamed(context, '/premiumcard');
+                                              }, child: Row(
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
 

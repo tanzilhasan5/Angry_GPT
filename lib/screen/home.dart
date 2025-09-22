@@ -530,7 +530,9 @@ class Home extends StatelessWidget {
 
 
                                               ),
-                                              onPressed: (){}, child: Row(
+                                              onPressed: (){
+                                                Navigator.pushNamed(context, '/premiumcard');
+                                              }, child: Row(
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
 
