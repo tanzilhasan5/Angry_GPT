@@ -12,6 +12,7 @@ import 'package:angrygpt/screen/mimi.dart';
 import 'package:angrygpt/screen/otpverification.dart';
 import 'package:angrygpt/screen/payment_details.dart';
 import 'package:angrygpt/screen/premiumcard.dart';
+import 'package:angrygpt/screen/profile.dart';
 import 'package:angrygpt/screen/resetpassword.dart';
 import 'package:angrygpt/screen/signup.dart';
 import 'package:angrygpt/screen/verifyemail.dart';
@@ -47,7 +48,8 @@ class MyApp extends StatelessWidget {
         '/lola':(context)=>Lola(),
         '/mimi':(context)=>Mimi(),
         '/premiumcard':(context)=>Premiumcard(),
-        '/payment_details':(context)=>PaymentDetails()
+        '/payment_details':(context)=>PaymentDetails(),
+        '/profile':(context)=>Profile()
 
 
 

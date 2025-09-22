@@ -9,6 +9,7 @@ class Login extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black87,
       body: SafeArea(
+
         child: Padding(
           padding: const EdgeInsets.all(20),
           child: SingleChildScrollView(

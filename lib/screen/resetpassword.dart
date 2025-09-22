@@ -9,6 +9,7 @@ class Resetpassword extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black87,
       appBar: AppBar(
+          iconTheme: IconThemeData(color: TextColor),
 
           title: Text('Reset Password ',style: TextStyle(color: TextColor),),centerTitle: true,
           backgroundColor: Colors.grey.shade900),

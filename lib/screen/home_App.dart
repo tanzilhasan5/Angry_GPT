@@ -11,7 +11,12 @@ class HomeApp extends StatelessWidget {
       appBar: AppBar(
         iconTheme: IconThemeData(color: TextColor),
         title: Text('Hi, Susan', style: TextStyle(color: TextColor)),
-        leading: Image(image: AssetImage('image/logo/Profile.png')),
+        leading:
+        InkWell(
+          onTap: (){
+            Navigator.pushNamed(context, '/profile');
+          },
+            child: Image(image: AssetImage('image/logo/Profile.png'))),
         backgroundColor: Colors.black87,
       ),
       backgroundColor: Colors.black87,

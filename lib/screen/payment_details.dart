@@ -10,6 +10,7 @@ class PaymentDetails extends StatelessWidget {
       backgroundColor: Colors.black87,
 
       appBar: AppBar(
+        iconTheme: IconThemeData(color: TextColor),
         backgroundColor: Colors.black87,
         centerTitle: true,
         title: Text('Payment Detailse',style: TextStyle(color: TextColor),),
@@ -112,10 +113,14 @@ class PaymentDetails extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                      style: ElevatedButton.styleFrom(alignment:Alignment.center,backgroundColor: ButtonColor ),
+
+                      style: ElevatedButton.styleFrom(
+                          alignment:Alignment.center,
+                          backgroundColor: ButtonColor,
+                          minimumSize: Size(300, 50) ),
                       onPressed: (){
                         Navigator.pushNamed(context, '/mimi');
-                      }, child: Text('Confirm Purchase',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)),
+                      }, child: Text('Confirm Purchase',style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold,color: Colors.black87),)),
 
                 ],
               )

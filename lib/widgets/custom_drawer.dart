@@ -48,7 +48,7 @@ class CustomDrawer extends StatelessWidget {
                 SizedBox(height: 310,),
                 ListTile(
                   leading: Image(image: AssetImage('image/logo/Profile.png')),
-                  title: Text('Susan Flores', style: TextStyle(color: TextColor)), onTap: () {},
+                  title: Text('Susan Flores', style: TextStyle(color: TextColor)), onTap: () {Navigator.pushNamed(context, '/profile');},
                 ),
 
 
